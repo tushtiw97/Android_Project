@@ -1,0 +1,4 @@
+select g.id, sum(g1.price)
+from guest g, gym g1, avails_gym a
+where g.id=a.gid and a.pckid=g1.id
+group by g.id

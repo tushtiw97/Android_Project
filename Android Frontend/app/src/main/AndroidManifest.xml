@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tushtiw97.transylvaniahotels">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectItems"
+            android:label="title_activity_select_items" />
+        <activity
+            android:name=".home_page"
+            android:label="title_activity_home_page" />
+        <activity
+            android:name=".gym"
+            android:label="title_activity_gym" />
+        <activity
+            android:name=".payment"
+            android:label="title_activity_payment" />
+        <activity
+            android:name=".RoomService"
+            android:label="title_activity_room_service" />
+        <activity
+            android:name=".SpaBooking"
+            android:label="title_activity_spa_booking" />
+        <activity
+            android:name=".TourismPackage"
+            android:label="title_activity_tourism_package" />
+        <activity
+            android:name=".Laundry"
+            android:label="title_activity_laundry"></activity>
+    </application>
+
+</manifest>

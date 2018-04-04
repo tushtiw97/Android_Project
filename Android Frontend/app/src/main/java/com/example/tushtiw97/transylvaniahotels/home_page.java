@@ -30,6 +30,7 @@ public class home_page extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),SelectItems.class);
+                intent.putExtra("id",id);
                 startActivity(intent);
             }
         });
@@ -58,6 +59,7 @@ public class home_page extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),SpaBooking.class);
+                intent.putExtra("id",id);
                 startActivity(intent);
             }
         });

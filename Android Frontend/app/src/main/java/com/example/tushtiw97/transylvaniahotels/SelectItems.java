@@ -1,5 +1,6 @@
 package com.example.tushtiw97.transylvaniahotels;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
@@ -10,10 +11,17 @@ import android.widget.Toast;
 
 public class SelectItems extends Activity {
 
+    private Context context;
+    private int id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_items);
+        this.context = this;
+
+        Intent i = getIntent();
+        id = i.getIntExtra("id",-1);
     }
 
     public void c1(View view){
@@ -704,11 +712,13 @@ public class SelectItems extends Activity {
         String tot = Integer.toString(result);
         Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(getApplicationContext(),payment.class);
-        intent.putExtra("Description",msg);
-        intent.putExtra("Total",tot);
+        new FoodAsyncTask(context, msg, tot).execute("http://hotel-transylvania.000webhostapp.com/order-food.php?gid=" + id + "&price=" + tot);
 
-        startActivity(intent);
+//        Intent intent = new Intent(getApplicationContext(),payment.class);
+//        intent.putExtra("Description",msg);
+//        intent.putExtra("Total",tot);
+//
+//        startActivity(intent);
     }
 
 }

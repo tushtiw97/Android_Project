@@ -30,7 +30,8 @@
             android:label="title_activity_gym" />
         <activity
             android:name=".payment"
-            android:label="title_activity_payment" />
+            android:label="title_activity_payment"
+            android:parentActivityName=".home_page" />
         <activity
             android:name=".RoomService"
             android:label="title_activity_room_service" />

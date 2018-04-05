@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#424242"
     tools:context="com.example.tushtiw97.transylvaniahotels.payment">
 
     <ScrollView
@@ -21,6 +22,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="84dp"
             android:layout_weight="1.0"
+            android:textColor="#009688"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -36,6 +38,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="DESCRIPTION:"
+        android:textColor="#009688"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

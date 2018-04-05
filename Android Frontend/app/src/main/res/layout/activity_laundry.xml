@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#424242"
     tools:context="com.example.tushtiw97.transylvaniahotels.Laundry">
 
     <TextView
@@ -15,6 +16,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Enter number of clothes:"
+        android:textColor="#009688"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,6 +33,7 @@
         android:layout_marginTop="22dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="#009688"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +48,7 @@
         android:layout_marginStart="131dp"
         android:layout_marginTop="74dp"
         android:text="Do you want dry cleaning? "
+        android:textColor="#009688"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,6 +64,7 @@
         android:layout_marginStart="142dp"
         android:layout_marginTop="47dp"
         android:text="Do you want clothes on same day?"
+        android:textColor="#009688"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,6 +79,7 @@
         android:layout_marginEnd="153dp"
         android:layout_marginStart="155dp"
         android:layout_marginTop="102dp"
+        android:background="#009688"
         android:text="SUBMIT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
